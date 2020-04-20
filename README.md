@@ -1,4 +1,4 @@
-# Instagram Clone
+# Instaclone Clone
 
 ## Tech stack
 

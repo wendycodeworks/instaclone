@@ -5,9 +5,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-# App name: Current app name is Instagram. Add following gem to rename
+# App name: Current app name is Instaclone. Add following gem to rename
 # More info here: https://stackoverflow.com/questions/42326432/how-to-rename-a-rails-5-application
-# gem 'rename'
+gem 'rename'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
