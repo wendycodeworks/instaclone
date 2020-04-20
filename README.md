@@ -1,4 +1,4 @@
 # Instagram Clone
 ## Tech stack
-Ruby on rails
-Postgresql
+- Ruby on Rails
+- PostgreSQL
