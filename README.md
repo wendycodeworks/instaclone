@@ -3,6 +3,7 @@
 ## Tech stack
 
 - Ruby on Rails
+- HTML & CSS
 - PostgreSQL
 
 # README
