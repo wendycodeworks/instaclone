@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :posts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   devise_for :users
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
     get 'signup', to: 'devise/registrations#new'
 
     authenticated :user do
-      root 'home#index', as: :authenticated_root
+      root 'pages#index', as: :authenticated_root
     end
 
     unauthenticated do
