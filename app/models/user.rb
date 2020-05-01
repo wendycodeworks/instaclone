@@ -7,4 +7,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :posts, dependent: :destroy
+
+  has_one_attached :avatar, dependent: :destroy
+
+  def avatar_attachment_path
+    avatar.attached? ? avatar : 'default-user.png'
+  end
 end
