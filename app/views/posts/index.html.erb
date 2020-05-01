@@ -1,17 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<div class="columns">
 
-<% @posts.each do |post| %>
+  <div class="column">
+    <%= render  "users" %>
 
-<% post.images.each do |image| %>
-<%= image_tag(image) %>
-<% end %>
-<%= link_to 'Show', post %>
-<%= link_to 'Edit', edit_post_path(post) %>
-<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <h1>Posts</h1>
 
-<% end %>
-<br>
+    <% @posts.each do |post| %>
 
-<%= link_to 'New Post', new_post_path %>
+    <% post.images.each do |image| %>
+    <%= image_tag(image) %>
+    <% end %>
+    <%= link_to 'Show', post %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    <% end %>
+    <br>
+
+    <%= link_to 'New Post', new_post_path %>
+  </div>
+
+  <div class="column">
+    <%= render  "shared/sidebar" %>
+  </div>
+
+</div>

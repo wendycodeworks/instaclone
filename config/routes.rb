@@ -14,7 +14,8 @@ Rails.application.routes.draw do
     get 'signup', to: 'devise/registrations#new'
 
     authenticated :user do
-      root 'pages#index', as: :authenticated_root
+      # root 'pages#index', as: :authenticated_root
+      root 'posts#index', as: :authenticated_root
     end
 
     unauthenticated do
