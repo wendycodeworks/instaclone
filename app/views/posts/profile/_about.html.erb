@@ -1,0 +1,23 @@
+<div class="columns">
+  <div class="column is-2">
+    <%= image_tag(@user.avatar) %>
+  </div>
+  <div class="column is-6">
+    <div>
+      <% @user.email %>
+      <button class="button is-primary is-light"><a href="#">Follow</a></button>
+      <button class="button is-primary is-light"><a href="#"><i class="fas fa-caret-down"></i></a></button>
+      <button><a href="#"><i class="fas fa-ellipsis-h"></i></a></button>
+    </div>
+    <div class="columns">
+      <div class="column">21 posts</div>
+      <div class="column">38 followers</div>
+      <div class="column">25 following</div>
+    </div>
+    <div>
+      <%= @user.email %>
+      <p>Description</p>
+      <p>Followed by hello and goodbye</p>
+    </div>
+  </div>
+</div>

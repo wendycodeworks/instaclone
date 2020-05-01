@@ -1,0 +1,8 @@
+<% @user.posts.each do |post| %>
+
+<% post.images.each do |image| %>
+<%= link_to  image_tag(image), post_path(post.user) %>
+<% end %>
+
+<% end %>
+<br>

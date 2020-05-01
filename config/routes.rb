@@ -24,4 +24,6 @@ Rails.application.routes.draw do
 
     # For more details: https://stackoverflow.com/questions/4954876/setting-devise-login-to-be-root-page
   end
+
+  get 'user/:id', to: 'posts#profile', as: 'profile'
 end
