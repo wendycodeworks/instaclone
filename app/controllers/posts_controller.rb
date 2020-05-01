@@ -70,7 +70,10 @@ class PostsController < ApplicationController
   end
 
   # Only allow a list of trusted parameters through.
+  # def post_params
+  #   params.fetch(:description, image: [])
+  # end
   def post_params
-    params.fetch(:post, {})
+    params.require(:post).permit(:description, images: [])
   end
 end
